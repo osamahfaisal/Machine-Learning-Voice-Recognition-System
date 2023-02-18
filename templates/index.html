@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Voice Password</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+    <link href="https://fonts.googleapis.com/css?family=Amatica+SC:400,700|Open+Sans+Condensed:300" rel="stylesheet">
+
+    
+  </head>
+
+  <body>
+     <div class="text"><h1>Voice Recognition System</h1></div> 
+      <h2> Press The Button To Record</h2>
+      <button id="recordButton" class="bstart" role="button" >Record</button>
+      <button id="stopButton" disabled class="bstop" role="button" >Stop</button>
+      
+     <div class="text"><h2 id="output-person"></h2></div> 
+     <div class="text"> <h2 id="output-scentence"></h2></div> 
+
+      <div class="eposter" , style="display: flex;">
+          <div class = "posterobjects" , id="posterobjects">
+              <img id="barchart" style="margin-right: 25%; margin-left: 30%;" src= ""    width="600" height="400" class = "hidden" >
+          </div>
+          <div class = "posterobjects" , id="posterobjects">
+              <img id="signal" style="margin-left: 25%; margin-right: 30%;"  src= ""    width="600" height="400"  class = "hidden" >
+          </div>
+      </div>
+
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+      <script src="{{ url_for('static', filename='js/recorder.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+
+  </body>
+</html>
